@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start a project | My Portfolio</title>
+<meta name="description" content="How to start a project with me: what I need from you, and a brief form that sends your details straight to my email.">
+<meta name="theme-color" content="#14130f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="index.html">My Portfolio<span>.</span></a>
+<nav id="nav" aria-label="Main">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="project.html">Projects</a><a href="contact.html">Contact</a>
+</nav>
+<a class="pill" href="start.html">Start a project</a>
+<button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+</div>
+</header>
+<main id="main">
+<section class="page-head wrap"><p class="kicker">Start a project</p><h1>Send a brief. I'll take it from there.</h1></section>
+
+<section class="wrap band" style="padding-top:20px">
+<h2>How it works</h2>
+<ol class="steps">
+<li><b>Send your brief</b><span>Fill in the form below with what you want built.</span></li>
+<li><b>I review it</b><span>I read your details and reply by email with questions or a proposed scope.</span></li>
+<li><b>We agree the plan</b><span>Features, timeline and cost are confirmed before any work starts.</span></li>
+<li><b>Build and launch</b><span>I design, develop and deploy, and you see progress along the way.</span></li>
+</ol>
+</section>
+
+<section class="wrap split" style="padding-top:100px">
+<div>
+<h2>What I need from you</h2>
+<ul class="checklist">
+<li><b>What you want to build</b>A website, marketplace, web app or Firebase back end, in a few sentences.</li>
+<li><b>Who will use it</b>Your customers, vendors, staff or the general public.</li>
+<li><b>Key features</b>The three to five things it must do on day one.</li>
+<li><b>References</b>Links to sites or apps you like. Optional but very helpful.</li>
+<li><b>Budget and deadline</b>Rough figures help me propose something realistic. Optional.</li>
+<li><b>Brand assets</b>Logo, colours and text if you already have them. Optional.</li>
+</ul>
+</div>
+<form id="startForm" class="form" novalidate>
+<div class="two">
+<label>Name<input id="s-name" autocomplete="name" required></label>
+<label>Email<input id="s-email" type="email" autocomplete="email" required></label>
+</div>
+<label>Project type
+<select id="s-type" required>
+<option value="">Choose one</option>
+<option>Website</option>
+<option>Online store or marketplace</option>
+<option>Web application</option>
+<option>Firebase back end</option>
+<option>Something else</option>
+</select></label>
+<label>Project description<textarea id="s-desc" rows="5" placeholder="What should it do, and who is it for?" required></textarea></label>
+<label>Key features (optional)<textarea id="s-features" rows="3"></textarea></label>
+<div class="two">
+<label>Budget (optional)<input id="s-budget"></label>
+<label>Deadline (optional)<input id="s-deadline"></label>
+</div>
+<label>Reference links (optional)<input id="s-links" placeholder="https://"></label>
+<button class="btn dark" type="submit">Send</button>
+<p id="startStatus" class="status" aria-live="polite"></p>
+</form>
+</section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</main>
+<footer class="site-footer">
+<div class="wrap foot">
+<div><a class="brand" href="index.html">My Portfolio<span>.</span></a><p>Web products built with Firebase and vanilla JavaScript, from Lagos.</p><ul class="socials" aria-label="Social media"><li><a href="https://wa.me/234XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1.2-1.5-2-1-.8.8c-1-.4-1.8-1.2-2.2-2.2l.8-.8-1-2z" fill="currentColor"/></svg></a></li><li><a href="https://facebook.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M14 8h2V5h-2.5C11.3 5 10 6.4 10 8.5V11H8v3h2v6h3v-6h2.2l.5-3H13V8.7c0-.5.3-.7 1-.7z" fill="currentColor"/></svg></a></li><li><a href="https://instagram.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/></svg></a></li><li><a href="https://linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="4" y="9" width="3" height="11" fill="currentColor"/><circle cx="5.5" cy="5.5" r="1.8" fill="currentColor"/><path d="M10 9h3v1.5c.6-1 1.7-1.7 3.2-1.7 2.8 0 3.8 1.8 3.8 4.4V20h-3v-5.8c0-1.3-.4-2.3-1.7-2.3S13 13 13 14.3V20h-3z" fill="currentColor"/></svg></a></li></ul></div>
+<nav aria-label="Footer"><a href="about.html">About</a><a href="services.html">Services</a><a href="project.html">Projects</a><a href="contact.html">Contact</a></nav>
+<small>© <span id="year">2026</span> My Portfolio</small>
+</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
