@@ -141,7 +141,7 @@ body::before{
   pointer-events: none;
   background:
     linear-gradient(var(--veil), var(--veil)),
-    url("images/background%20image.png") center / cover no-repeat,
+    url("images/backgroundimage.png") center / cover no-repeat,
     var(--paper);
 }
 
